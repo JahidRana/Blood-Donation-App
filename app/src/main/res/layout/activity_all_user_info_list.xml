@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AllUserInfoList_Activity">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/layout_toolbar_for_non_home_activity"
+        tools:layout_editor_absoluteX="-1dp"
+        tools:layout_editor_absoluteY="45dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/RecyclerView_ActivityAllUserList"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/background_about_us"
+        android:backgroundTint="#2196F3"
+        android:elevation="5dp"
+        android:padding="10dp"
+        android:text="Search Result For:"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include" />
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:layout_width="wrap_content"
+        android:indeterminate="true"
+        android:id="@+id/progrssbar"
+        style="@style/Widget.Material3.CircularProgressIndicator"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:visibility="invisible"
+        app:trackColor="#D5238E"
+        app:layout_constraintEnd_toEndOf="@+id/RecyclerView_ActivityAllUserList"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/RecyclerView_ActivityAllUserList"
+        app:layout_constraintTop_toTopOf="@+id/RecyclerView_ActivityAllUserList" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/viewOnMap"
+        android:layout_width="wrap_content"
+        android:text="View on map"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/RecyclerView_ActivityAllUserList"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toTopOf="@+id/textView4"
+       android:drawableLeft="@drawable/ic_location" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

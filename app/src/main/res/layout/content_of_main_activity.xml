@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="100dp"
+    android:layout_height="wrap_content"
+
+    android:background="@drawable/blood">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="7dp">
+
+        <TextView
+            android:id="@+id/SearchBloodMain_Activity"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_margin="15dp"
+            android:background="@drawable/background_about_us"
+            android:backgroundTint="#C4C0C0C0"
+            android:drawableLeft="@drawable/icon_search"
+            android:elevation="8dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Search Blood"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/All_DonorList"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_margin="15dp"
+            android:background="@drawable/background_about_us"
+            android:backgroundTint="#C4C0C0C0"
+            android:drawableLeft="@drawable/icon_list"
+            android:drawableTint="@color/black"
+            android:elevation="8dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="All Donor List"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/helpline"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_margin="15dp"
+            android:background="@drawable/background_about_us"
+            android:backgroundTint="#C4C0C0C0"
+            android:drawableLeft="@drawable/icon_helpline"
+            android:drawableTint="@color/black"
+            android:elevation="8dp"
+            android:gravity="center"
+
+            android:padding="10dp"
+            android:text="Help Line"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/All_DonorList"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/SearchBloodMain_Activity"
+            app:layout_constraintTop_toBottomOf="@+id/SearchBloodMain_Activity" />
+        <TextView
+            android:drawableLeft="@drawable/ic_or"
+            android:id="@+id/mapMarker"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_margin="15dp"
+            android:background="@drawable/background_about_us"
+            android:backgroundTint="#C4C0C0C0"
+            android:elevation="8dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Organization"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_about_us"
+            android:backgroundTint="#C0C0C0"
+    android:layout_height="wrap_content"
+    android:elevation="8dp"
+   android:layout_marginBottom="50dp"
+    >
+    <TextView
+        android:backgroundTint="#C4C0C0C0"
+        android:id="@+id/tot_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:drawableTint="@color/black"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text=""
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/tot_donor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:drawableTint="@color/black"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:text=""
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        />
+
+
+</LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textVfigeiohiew9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:elevation="8dp"
+                android:gravity="center"
+                android:text="BloodBank"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="8dp"
+                android:gravity="center"
+                android:text="Version 1.1.0 \nCopyright \u00a9 2022-23 | Supervised by Monishanker Halder\nDeveloped by Md. Jahid Rana , Md. Mahabub Alam\n All right reserved"
+                android:textColor="@color/black"
+                android:textSize="11sp"
+
+                />
+
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
